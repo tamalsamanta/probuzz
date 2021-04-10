@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Teko';
+  font-weight: lighter;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.cover1 {
+  background-color: rgb(29, 47, 51);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  animation: slide 0.5s ease-out forwards 0.25s;
+}
+
+.cover2 {
+  background-color: rgb(22, 36, 39);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  animation: slide 0.7s ease-out forwards;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(218, 218, 218);
+}
+
+.top {
+  padding: 0 10vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-items {
+  margin: 0 10px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.joinUs {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10vw;
+}
+
+.in {
+  width: 300px;
+  padding: 10px;
+}
+
+.sub {
+  padding: 10px;
+  border: none;
+}
+
+.cards,
+.serviceCards {
+  display: flex;
+}
+
+.card {
+  min-width: 200px;
+  height: 200px;
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0px 25px 25px -20px rgb(112, 112, 112);
+  transition: box-shadow 0.33s;
+}
+
+.card:hover {
+  box-shadow: none;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes slide {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100vw;
+  }
+}
