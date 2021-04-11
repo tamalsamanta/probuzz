@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Teko';
+  font-weight: lighter;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.cover1 {
+  background-color: rgb(29, 47, 51);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  animation: slide 0.5s ease-out forwards 3.75s;
+}
+
+.cover2 {
+  background-color: rgb(22, 36, 39);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  animation: slide 0.7s ease-out forwards 3.5s;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('/static/Rectangle\ 1.png');
+}
+
+.top {
+  padding: 20px 5vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-items {
+  margin: 0 10px;
+  padding: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+}
+
+.joinUs {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10vw;
+}
+
+.in {
+  width: 300px;
+  padding: 10px;
+}
+
+.sub {
+  padding: 10px;
+  border: none;
+}
+
+.WCcards,
+.team {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.WCcard {
+  width: 30%;
+  min-width: 300px;
+  height: 500px;
+  text-align: center;
+  background-color: rgb(250, 250, 250);
+  padding: 10px;
+  box-shadow: 0px 25px 50px -40px rgb(112, 112, 112);
+  transition: box-shadow 0.33s;
+}
+
+.serviceCards {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px 100px;
+}
+
+.SVcard {
+  width: 20%;
+  min-width: 300px;
+  height: 300px;
+  text-align: center;
+  background-color: rgb(250, 250, 250);
+  padding: 10px;
+  box-shadow: 0px 0px 20px #dfdfdf;
+  transition: box-shadow 0.33s;
+}
+
+.SVcard:hover {
+  box-shadow: none;
+}
+
+.WCcard:hover {
+  box-shadow: none;
+}
+
+.hide {
+  display: none;
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fil 1s ease forwards 2s;
+}
+
+#logo circle {
+  stroke-opacity: 0;
+}
+
+#logo path {
+  stroke-dasharray: 354px;
+  stroke-dashoffset: 354px;
+  animation: line-anim 2s ease forwards;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fil {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #b3b3b3;
+  }
+}
+
+@keyframes slide {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100vw;
+  }
+}

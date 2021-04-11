@@ -4,75 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/static/styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap"
       rel="stylesheet"
     />
-    <script src="/script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <script src="/script/script.js" defer></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>ProBuzz</title>
   </head>
   <body>
-    <div class="cover1 hide"></div>
-    <div class="cover2 hide"></div>
-    <main class="main">
-      <div class="top">
-        <div class="logo"></div>
-        <nav class="nav">
-          <a href="#" class="nav-items">Home</a>
-          <a href="#" class="nav-items">About</a>
-          <a href="#" class="nav-items">Services</a>
-          <a href="#" class="nav-items">Portfolio</a>
-          <a href="#" class="nav-items">Team</a>
-          <a href="#" class="nav-items">Contact</a>
-        </nav>
-      </div>
-      <!-- We can add content on landing page as intro if needed -->
-      <div class="container">
-        <article class="intro"></article>
-      </div>
-    </main>
-    <section>
-      <div class="joinUs">
-        <span style="font-weight: normal"
-          >Join the ProBuzz! Subscribe to get the latest updates</span
-        >
-        <form action="#">
-          <input type="text" class="in" placeholder="Your Email" />
-          <input type="submit" value="Subscribe" class="sub" />
-        </form>
-      </div>
-      <span class="welcome">Welcome to ProBuzz</span>
-      <div class="cards">
-        <div class="card">card1</div>
-        <div class="card">card2</div>
-        <div class="card">card3</div>
-      </div>
-    </section>
-    <section>
-      <div class="services">
-        <span>Our Services</span>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing</span>
-        <div class="serviceCards">
-          <div class="card">card1</div>
-          <div class="card">card2</div>
-          <div class="card">card3</div>
-          <div class="card">card4</div>
-          <div class="card">card5</div>
-          <div class="card">card6</div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="team">
-        <div class="teamCard"></div>
-      </div>
-    </section>
-    <section>
-      <div class="portfolio"></div>
-    </section>
-    <div class="outro"></div>
+    <div class="cover1"></div>
+    <div class="cover2">
+      <svg
+        id="logo"
+        width="67"
+        height="84"
+        viewBox="0 0 67 84"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M33.5 2C31.8708 2 30.2657 2.12438 28.7008 2.3611V17.5914C30.5306 16.9053 32.5129 16.5321 34.5794 16.5321C43.8448 16.5321 51.3567 24.043 51.3567 33.3071C51.3567 42.5713 43.8448 50.0781 34.5794 50.0781C29.8163 50.0781 25.5187 48.092 22.465 44.9063C19.5999 41.9173 17.8343 37.873 17.8062 33.4114H17.8022V33.2951V6.18471C8.41236 11.5931 2.07223 21.6998 2.00401 33.2951H2V81L22.465 72.3979V63.0013C25.8959 64.2892 29.6157 64.9914 33.5 64.9914C50.8952 64.9914 65 50.8885 65 33.4957C65 16.1028 50.8952 2 33.5 2Z"
+          stroke="#B3B3B3"
+          stroke-width="3"
+          stroke-miterlimit="10"
+        />
+        <circle cx="34.5" cy="33.5" r="6" stroke="#B3B3B3" stroke-width="3" />
+      </svg>
+    </div>
   </body>
 </html>
