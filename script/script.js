@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 $(function () {
   $('html, body').css({
-    overflowY: 'hidden',
+    overflow: 'hidden',
   })
   setTimeout(function () {
     $('html, body').css({
