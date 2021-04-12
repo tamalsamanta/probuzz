@@ -1,6 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: 'Teko';
   font-weight: lighter;
@@ -8,7 +6,8 @@
 
 body {
   width: 100vw;
-  overflow-x: hidden;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 .cover1 {
@@ -33,87 +32,89 @@ body {
   background-image: url('/static/Rectangle\ 1.png');
 }
 
-.top {
-  padding: 20px 5vw;
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav {
-  display: flex;
-}
-
-.nav-items {
-  margin: 0 10px;
-  padding: 5px;
-  text-decoration: none;
-  color: #fff;
-  font-size: 25px;
-}
-
 .joinUs {
   display: flex;
   justify-content: space-between;
   padding: 20px 10vw;
 }
 
-.in {
-  width: 300px;
-  padding: 10px;
-}
-
-.sub {
-  padding: 10px;
-  border: none;
-}
-
-.WCcards,
-.team {
-  display: flex;
-  width: 100vw;
-  justify-content: space-between;
-  padding: 50px;
-}
-
-.WCcard {
-  width: 30%;
-  min-width: 300px;
-  height: 500px;
-  text-align: center;
-  background-color: rgb(250, 250, 250);
-  padding: 10px;
-  box-shadow: 0px 25px 50px -40px rgb(112, 112, 112);
-  transition: box-shadow 0.33s;
-}
-
-.serviceCards {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  padding: 20px 100px;
-}
-
-.SVcard {
-  width: 20%;
-  min-width: 300px;
-  height: 300px;
-  text-align: center;
-  background-color: rgb(250, 250, 250);
-  padding: 10px;
-  box-shadow: 0px 0px 20px #dfdfdf;
-  transition: box-shadow 0.33s;
-}
-
-.SVcard:hover {
-  box-shadow: none;
-}
-
-.WCcard:hover {
-  box-shadow: none;
-}
-
 .hide {
   display: none;
+}
+
+.rect {
+  height: 40vh;
+  width: 100vw;
+  background-color: black;
+  overflow: hidden;
+}
+
+.c2atext {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.gfx {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  margin-top: 20vh;
+}
+
+.rect2 {
+  height: 40vh;
+  width: 100vw;
+  background-color: #e5e5e5;
+}
+
+.member {
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+    0 0 0 1px rgba(10, 10, 10, 0.02);
+  color: #4a4a4a;
+  max-width: 100%;
+  position: relative;
+}
+
+.member-content {
+  padding: 2rem;
+}
+
+.member-pic {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.member-name {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.member-desc {
+  font-family: 'Poppins';
+  font-size: 0.8rem;
+}
+
+.member-social {
+  display: flex;
+  padding: 1rem 1rem;
+  justify-content: space-between;
+}
+
+.member-social a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: inherit;
 }
 
 #logo {
