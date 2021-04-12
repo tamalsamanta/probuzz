@@ -103,7 +103,7 @@ body {
 
 .member-social {
   display: flex;
-  padding: 1rem 1rem;
+  padding-top: 1rem;
   justify-content: space-between;
 }
 
