@@ -10,6 +10,8 @@ $(function () {
     $('html, body').css({
       overflowY: 'auto',
     })
+    $('.cover2').css('display', 'none');
+    $('.cover1').css('display', 'none');
     // .animate(
     //   {
     //     scrollTop: $('.is-max-desktop').offset().top,
