@@ -68,6 +68,14 @@ body {
   background-color: #e5e5e5;
 }
 
+.wcCard {
+  min-height: 275px !important;
+}
+
+.svcCard {
+  min-height: 300px !important;
+}
+
 .member {
   background-color: #fff;
   border-radius: 0.25rem;
@@ -99,6 +107,7 @@ body {
 .member-desc {
   font-family: 'Poppins';
   font-size: 0.8rem;
+  text-align: center;
 }
 
 .member-social {
